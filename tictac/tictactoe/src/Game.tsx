@@ -136,7 +136,7 @@ function sendMove(mx: number, my: number, c: any)
         } 
         if (val < 0) {
           drawPartialO(x, y, 80, Math.abs(val), ctx);
-          setTimeout(() => drawPartialX(x, y, 80, val, ctx), 1000);
+          setTimeout(() => drawPartialO(x, y, 80, val, ctx), 1000);
           kloonimatriisi = matriisi;
           kloonimatriisi[x][y] -= 1;
           setMatriisi(kloonimatriisi);
